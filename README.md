@@ -1,4 +1,4 @@
-# **Zeox Ui Libaray Relasse**
+# **Zeox UI Library Release**
 ---
 
 Modern and powerful UI Library for Roblox.
@@ -135,10 +135,10 @@ home:CreateInput({
     end,
 })
 ```
-### Create Dropdawn
+### Create Dropdown
 
 ```lua
-home:CreateDropdown({
+home:CreateDropdown
     Name = 'Long List',
     Options = {'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'},
     Default = 'One',
@@ -161,3 +161,16 @@ home:Notify({
 ```lua
 home:CreateStatusBar({'No Errors', 'Ready'}, Ui.Name .. ' ' .. Ui.Version)
 ```
+## Credits
+
+Created by:
+Zeox
+
+Special thanks to contributors.
+
+---
+
+## License
+
+MIT License
+
