@@ -30,7 +30,7 @@ Roblox experiences with beautiful layouts, smooth interactions, and full customi
 ## Installation
 
 ```lua
-local ZeoxUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/main/src/ZeoxUI.lua"
+local Ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/main/src/ZeoxUI.lua"
 ))()
 ```
 
@@ -62,4 +62,30 @@ local Window = Ui:CreateWindow({
         Position = UDim2.new(0, 20, 0.5, -24),
     },
 })
+```
+
+### Create Tab
+
+
+```lua
+local Home = Window:CreateTab({Name = 'Home', Icon = Ui.Icons.home})
+```
+
+### Create Card Button 
+
+```lua
+local cards = Home:CreateCards({
+    Title = 'Quick Actions',
+    Columns = 2,
+    Gap = 10,
+    CardHeight = 76,
+    Cards = {
+        {
+            Name = 'Auto Farm',
+            Description = 'Start automatic farming',
+            Icon = Ui.Icons.spark,
+            Callback = function()
+                Window:Notify({Title = 'Farm', Text = 'Auto Farm enabled', Duration = 3})
+            end,
+        },
 ```
