@@ -1,5 +1,6 @@
 # **Zeox UI Library Release**
 ---
+![Relasse v1.0.0](https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/refs/heads/main/banner2.png)
 
 Modern and powerful UI Library for Roblox.
 Zeox UI is a highly customizable and modern UI framework built for Roblox developers, allowing you to create clean, professional, and visually appealing interfaces with ease.
@@ -169,6 +170,10 @@ Zeox
 Special thanks to contributors.
 
 ---
+
+## Preview
+
+![Zeox UI Preview](https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/refs/heads/main/banner.png)
 
 ## License
 
