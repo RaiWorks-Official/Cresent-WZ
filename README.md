@@ -135,3 +135,29 @@ home:CreateInput({
     end,
 })
 ```
+### Create Dropdawn
+
+```lua
+home:CreateDropdown({
+    Name = 'Long List',
+    Options = {'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'},
+    Default = 'One',
+    Callback = function(option)
+        print('Picked:', option)
+    end,
+})
+```
+### Create Notification
+
+```lua
+home:Notify({
+    Title = Ui.Name,
+    Text = 'Loaded successfully',
+    Duration = 4,
+})
+```
+### Create Status Bar
+
+```lua
+home:CreateStatusBar({'No Errors', 'Ready'}, Ui.Name .. ' ' .. Ui.Version)
+```
