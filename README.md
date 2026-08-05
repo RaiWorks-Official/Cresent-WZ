@@ -22,3 +22,11 @@ Designed with flexibility and performance in mind, Zeox UI provides a simple yet
 - Keybind Support
 - Easy Customization
 ---
+
+
+## Installation
+
+```lua
+local ZeoxUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/main/src/ZeoxUI.lua"
+))()```
+
