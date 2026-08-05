@@ -1,4 +1,4 @@
-local Ui = loadstring(game:HttpGet('https://pastefy.app/KNA6g2No/raw'))()
+local Ui = loadstring(game:HttpGet('https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/refs/heads/main/src/ui/Ui.lua'))()
 
 Ui:CreateTheme('Neon', {
     Accent = Color3.fromRGB(0, 255, 180),
