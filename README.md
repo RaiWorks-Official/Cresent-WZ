@@ -74,18 +74,64 @@ local Home = Window:CreateTab({Name = 'Home', Icon = Ui.Icons.home})
 ### Create Card Button 
 
 ```lua
-local cards = Home:CreateCards({
-    Title = 'Quick Actions',
-    Columns = 2,
-    Gap = 10,
-    CardHeight = 76,
-    Cards = {
-        {
-            Name = 'Auto Farm',
-            Description = 'Start automatic farming',
-            Icon = Ui.Icons.spark,
-            Callback = function()
-                Window:Notify({Title = 'Farm', Text = 'Auto Farm enabled', Duration = 3})
-            end,
-        },
+home:AddCard({
+    Name = 'Rejoin',
+    Description = 'Rejoin the current server',
+    Icon = Ui.Icons.refresh,
+    Callback = function()
+        Window:Notify({Title = 'Rejoin', Text = 'Rejoining server...', Duration = 3})
+    end,
+})
+```
+
+### Create Normal Button
+
+```lua
+home:CreateButton({
+    Name = 'Execute',
+    Icon = Ui.Icons.run,
+    Callback = function()
+        Window:Notify({Title = 'Execute', Text = 'Script executed', Duration = 3})
+    end,
+})
+```
+### Create Toggle
+
+```lua
+home:CreateToggle({
+    Name = 'Auto Reconnect',
+    Default = true,
+    Callback = function(state)
+        print('Auto Reconnect:', state)
+    end,
+})
+```
+
+### Create Slider
+
+```lua
+home:CreateSlider({
+    Name = 'WalkSpeed',
+    Min = 16,
+    Max = 200,
+    Default = 16,
+    Callback = function(value)
+        local character = game.Players.LocalPlayer.Character
+
+        if character and character:FindFirstChild('Humanoid') then
+            character.Humanoid.WalkSpeed = value
+        end
+    end,
+})
+```
+### Create Input
+
+```lua
+home:CreateInput({
+    Name = 'Player Name',
+    Placeholder = 'Type a name...',
+    Callback = function(text)
+        print('Player Name:', text)
+    end,
+})
 ```
