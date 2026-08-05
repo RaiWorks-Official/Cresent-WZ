@@ -31,8 +31,7 @@ Roblox experiences with beautiful layouts, smooth interactions, and full customi
 ## Installation
 
 ```lua
-local Ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/main/src/ZeoxUI.lua"
-))()
+local Ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/refs/heads/main/src/ui/Ui.lua"))()
 ```
 
 ### Custom Colors
