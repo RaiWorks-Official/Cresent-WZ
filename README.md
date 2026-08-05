@@ -30,3 +30,24 @@ Designed with flexibility and performance in mind, Zeox UI provides a simple yet
 local ZeoxUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ru-3/W-Azeox-Ui/main/src/ZeoxUI.lua"
 ))()
 ```
+
+### Quick Example
+
+```lua
+local Window = ZeoxUI:CreateWindow({
+    Title = "Zeox UI",
+    Version = "v1.0.0",
+    Theme = "Dark"
+})
+
+local Tab = Window:CreateTab({
+    Name = "Main"
+})
+
+Tab:CreateButton({
+    Name = "Hello World",
+    Callback = function()
+        print("Hello from Zeox UI")
+    end
+})
+```
