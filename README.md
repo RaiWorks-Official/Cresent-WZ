@@ -31,23 +31,32 @@ local ZeoxUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ru-3/W
 ))()
 ```
 
-### Quick Example
+### Custom Colors
 
 ```lua
-local Window = ZeoxUI:CreateWindow({
-    Title = "Zeox UI",
-    Version = "v1.0.0",
-    Theme = "Dark"
-})
+Ui:CreateTheme('Neon', {
+    Accent = Color3.fromRGB(0, 255, 180),
+    AccentText = Color3.fromRGB(0, 0, 0),
+    Success = Color3.fromRGB(0, 255, 180),
+    Selected = Color3.fromRGB(18, 48, 42),
+    Hover = Color3.fromRGB(14, 34, 30),
+```
 
-local Tab = Window:CreateTab({
-    Name = "Main"
-})
+### Create Window
 
-Tab:CreateButton({
-    Name = "Hello World",
-    Callback = function()
-        print("Hello from Zeox UI")
-    end
+
+```lua
+local Window = Ui:CreateWindow({
+    Title = 'W-Azeox',
+    Version = Ui.Version,
+    Theme = 'Obsidian', -- Dark , DarkRed , Light , Obsidian And Moore
+    SidebarTitle = 'Explorer',
+    SearchPlaceholder = 'Search anything...',
+    Size = UDim2.new(0, 900, 0, 560),
+    FloatingToggle = {
+        Icon = Ui.Icons.spark,
+        Size = 48,
+        Position = UDim2.new(0, 20, 0.5, -24),
+    },
 })
 ```
