@@ -1,8 +1,8 @@
 local Ui = {}
 
 Ui.__index = Ui
-Ui.Name = 'Zeox Ui'
-Ui.Version = 'v1.0.0'
+Ui.Name = 'ZEOX UI'
+Ui.Version = 'v1.0.6"
 
 local TweenService = game:GetService('TweenService')
 local UserInputService = game:GetService('UserInputService')
@@ -3962,7 +3962,7 @@ function Window:CreateStatusBar(items, rightText)
     end
 
     local right = new('TextLabel', {
-        Text = rightText or '\u{25cf} Ready',
+        Text = rightText or ' Ready',
         Font = Enum.Font.Gotham,
         TextSize = 11,
         TextXAlignment = Enum.TextXAlignment.Right,
