@@ -3962,7 +3962,7 @@ function Window:CreateStatusBar(items, rightText)
     end
 
     local right = new('TextLabel', {
-        Text = rightText or ' Ready',
+        Text = rightText or '\u{25cf} Ready',
         Font = Enum.Font.Gotham,
         TextSize = 11,
         TextXAlignment = Enum.TextXAlignment.Right,
