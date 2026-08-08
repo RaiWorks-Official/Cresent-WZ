@@ -1,8 +1,8 @@
 local Ui = {}
 
 Ui.__index = Ui
-Ui.Name = 'ZEOX UI'
-Ui.Version = 'v1.0.6"
+Ui.Name = 'Zeox Ui'
+Ui.Version = 'v1.0.0'
 
 local TweenService = game:GetService('TweenService')
 local UserInputService = game:GetService('UserInputService')
@@ -3084,13 +3084,8 @@ function Ui:CreateWindow(cfg)
         ip.PaddingTop, ip.PaddingBottom = UDim.new(0, 7), UDim.new(0, 7)
         ip.PaddingLeft, ip.PaddingRight = UDim.new(0, 7), UDim.new(0, 7)
 
-        new('UICorner', {
-            CornerRadius = UDim.new(1, 0),
-            Parent = b,
-        })
-
-        local bs = stroke(b, 'Stroke', 1)
-
+        -- removed stroke and corner
+      
         bs.Transparency = 0.55
         b.MouseEnter:Connect(function()
             tween(b, 0.14, {BackgroundTransparency = 0})
