@@ -3086,7 +3086,6 @@ function Ui:CreateWindow(cfg)
 
         -- removed stroke and corner
       
-        bs.Transparency = 0.55
         b.MouseEnter:Connect(function()
             tween(b, 0.14, {BackgroundTransparency = 0})
             tween(b, 0.14, {ImageColor3 = ACTIVE.Text})
